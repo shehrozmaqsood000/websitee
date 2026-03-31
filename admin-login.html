@@ -27,7 +27,9 @@
         <label for="loginPassword"><i class="fas fa-key"></i> Password</label>
         <input type="password" id="loginPassword" placeholder="Admin password" required/>
       </div>
-      <button type="submit" class="btn btn-secondary" style="width:100%; margin-top:8px;">Admin Login <i class="fas fa-sign-in-alt"></i></button>
+      <button type="<button type="button" class="btn-primary" style="width:100%; margin-top:8px;" onclick="loginAdmin()">
+   Login <i class="fas fa-sign-in-alt"></i>
+</button>"></i></button>
     </form>
     <p style="text-align:center; margin-top:16px; font-size:0.82rem; color:var(--text-muted);">
       <strong>Demo:</strong> username: <code>admin</code> | password: <code>hopeadmin2025</code>
@@ -36,5 +38,17 @@
   </div>
 </div>
 <script src="../js/script.js"></script>
+  </script><script>
+function loginAdmin() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if(username === "admin" && password === "admin123"){
+        window.location.href = "admin-dashboard.html";
+    } else {
+        alert("Invalid Admin Login");
+    }
+}
+</script>
 </body>
 </html>
