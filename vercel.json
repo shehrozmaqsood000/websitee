@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "hope-preparations",
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
