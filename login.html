@@ -26,7 +26,9 @@
         <label for="loginPassword"><i class="fas fa-lock"></i> Password</label>
         <input type="password" id="loginPassword" placeholder="Enter your password" required autocomplete="current-password"/>
       </div>
-      <button type="submit" class="btn btn-primary" style="width:100%; margin-top:8px;">Login <i class="fas fa-sign-in-alt"></i></button>
+      <button type="<button type="button" class="btn-primary" style="width:100%; margin-top:8px;" onclick="loginStudent()">
+   Login <i class="fas fa-sign-in-alt"></i>
+</button>"></i></button>
     </form>
     <p style="text-align:center; margin-top:20px; font-size:0.85rem; color:var(--text-muted);">
       Admin? <a href="admin-login.html" style="color:var(--primary); font-weight:700;">Admin Login</a>
@@ -38,5 +40,22 @@
   </div>
 </div>
 <script src="../js/script.js"></script>
+  </script><script src="../js/script.js"></script>
+
+<script>
+function loginStudent() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if(username === "student" && password === "student123"){
+        window.location.href = "student-dashboard.html";
+    } else {
+        alert("Invalid Student Login");
+    }
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
